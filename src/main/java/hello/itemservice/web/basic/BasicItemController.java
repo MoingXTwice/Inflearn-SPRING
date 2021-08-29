@@ -79,6 +79,7 @@ public class BasicItemController {
     public String addItemV5(Item item) {
         itemRepository.save(item);
         return "redirect:/basic/items/" + item.getId();
+        // test
     }
 
     @GetMapping("/{itemId}/edit")
